@@ -1,297 +1,168 @@
 
 *{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
 }
 
-body{
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-    background-color: white;
-    margin: 0;
-    text-align: center;
-    font-family: 'Merriweather', serif;
+
+body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
 }
-  
 
 h1 {
-    color: #66bFBF;
-    font-size: 2rem;
-    /* margin: 50px auto 0 auto; */
-    font-family: 'Sacramento', cursive;
-  }
-  
-h2 {
-    color: #66bFBF;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    font-weight: normal;
-    /* padding-bottom: 10px; */
-  }
-
-h3 {
-    color: #11999E;
-    font-family: 'Montserrat', sans-serif;
-    /* margin-top: 200px;
-    margin-right: 170px; */
-  }
-
-
-  p {
-    font-family: 'Merriweather', serif;
-    text-align: left;
-    /* line-height: 2; */
-    font-weight: bold;
-  }
-
-
- /*TITLE Welcome Section */
- .welcome-title {
-   color: rgb(0, 0, 0);
-   font-size: 80px;
-   font-family: 'Montserrat', sans-serif;
- }
-.welcome-para {
-  color: rgb(0, 0, 0);
-   font-size: 60px;
-   font-family: 'Sacramento', cursive;
+  color: #d8bbe4;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
 }
 
-.pro {
-  text-decoration: underline;
-    }
-
-  /*ABOUT ME  */
-
-.about-me {
-    width: 50%;
-    margin: 100px auto 100px auto;
-    text-align: left;
-    
-    }
-  
-.about-code {
-      width: 25%;
-      float: left;
-      margin-right: 30px;
-}
-
-.about-heading{
-  /* display: inline-flex; */
-  text-align: left;
-  /* margin-top: 200px; */
-  margin-right: 170px;
-}
-
-.about-para{ 
-  font-family: 'Merriweather', serif;
-  text-align: left;
-  
+p {
+  color: #d8bbe4;
+  font-weight: bold;
 }
 
 
-/* END ABOUT ME */
+/* DICE */
 
-/* SEPERATOR */
-
-#seperator{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 250px;
-  margin-bottom: 50px;
-  background-color: rgb(64, 185, 233);
-  background-image: linear-gradient(62deg, #cef8ff 0%, #ffe9ff 100%);
-}
-/* BOOTSTRAP PROJECTS */
-.projects-title{
-  font-size: 70px;
-  text-align: center; 
-  margin-bottom: 60px;
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
 }
 
-.card-img-top {
-    width: 100%;
-    /* height: 20vw; */
-    object-fit: cover;
+.dice {
+  text-align: center;
+  display: inline-block;
+
 }
 
-.container{
-  padding: 3% 15%;
-}
-
-.welcome-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 600px;
-  margin-bottom: 50px;
-  background-color: rgb(64, 185, 233);
-  background-image: linear-gradient(62deg, #cef8ff 0%, #ffe9ff 100%);
+body {
+  background-color: white;
 }
 
 
-
-#contact-message{
-    width: 40%;
-    margin: 40px auto 60px;
+.diceimg {
+  width: 80%;
 }
+
+
+/* end of dice */
+
 
 
 /* NAVIGATION */
-  
+
 nav{
-    background: #ffffff;
-    height: 60px;
-    width: 100%;
-  }
+  background: #ffffff;
+  height: 80px;
+  width: 100%;
+}
+ul .logo{
+  background: #d8bbe4;
+  float: left;
+  margin-right: 800px;
+ margin-top: 20px;
+ padding: 5px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #11999E;
+  font-size: 12px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #d8bbe4;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #11999E;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
   ul .logo{
-    background: #d8bbe4;
-    float: left;
-    margin-right: 750px;
-   margin-top: 20px;
-   padding: 5px;
-  }
-  nav ul{
-    float: right;
-    margin-right: 20px;
-  }
-  nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+    font-size: 30px;
+    padding-left: 50px;
   }
   nav ul li a{
-    color: #11999E;
-    font-size: 15px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
+    font-size: 16px;
+    padding: 2rem;
+    margin: 2rem;
   }
-  a.active,a:hover{
-    background: #00CED1;
-    transition: .5s;
-  }
+}
+@media (max-width: 858px){
   .checkbtn{
-    font-size: 30px;
-    color: #11999E;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    /* display: none; */
+    display: block;
   }
-  #check{
-    display: none;
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
   }
-  @media (max-width: 952px){
-    ul.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 10px;
-      padding: 2rem;
-      margin: 2rem;
-    }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
   }
-  @media (max-width: 858px){
-    .checkbtn{
-      display: block;
-    }
-    ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #2c3e50;
-      top: 20px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-    }
-    nav ul li{
-      display: block;
-      margin: 30px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-    a:hover,a.active{
-      background: none;
-      color: #66BFBF;
-    }
-    #check:checked ~ ul{
-      left: 0;
-    }
+  nav ul li a{
+    font-size: 20px;
   }
-  section{
-    background: url(bg1.jpg) no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
+  a:hover,a.active{
+    background: none;
+    color: #66BFBF;
   }
-  
-
-
-/* Contact section */
-
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 80vh;
-  padding: 0 2rem;
-  background: var(--main-gray);
-}
-
-.contact-section-header > h2 {
-  font-size: 4rem;
-}
-
-@media (max-width: 20em) {
-  .contact-section-header > h2 {
-    font-size: 2rem;
+  #check:checked ~ ul{
+    left: 0;
   }
 }
-
-.contact-section-header > p {
-  font-style: italic;
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
 }
 
-.contact-links {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 952px;
-  margin-top: 4rem;
-  flex-wrap: wrap;
-}
 
-.contact-details:hover {
-  transform: translateY(8px);
-}
+/* end Nav */
+
 
 /* Footer */
 .footer{
-  color: #00CED1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 80px;
-  margin-bottom: 2px;
-  background-color: rgb(64, 185, 233);
-  background-image: linear-gradient(62deg, #cef8ff 0%, #ffe9ff 100%);
+color: #00CED1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 80px;
+margin-bottom: 2px;
+background-color: rgb(64, 185, 233);
+background-image: linear-gradient(62deg, #cef8ff 0%, #ffe9ff 100%);
 }

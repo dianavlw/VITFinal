@@ -28,7 +28,7 @@ h1 {
 h2 {
     color: #66bFBF;
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: normal;
     /* padding-bottom: 10px; */
   }
@@ -69,24 +69,16 @@ h3 {
 
 .about-me {
     width: 50%;
-    border-bottom-width: 20px;
-    margin-bottom: 180px;
-    margin-top:200px;
-    /* margin: 200px auto 100px 50px; */
+    margin: 100px 50px; 100px 50px;
     /* text-align: center; */
-    /* padding: 20px; */
+    padding: 20px;
 }
   
 .about-code {
-      width: 10%;
-      display: inline;
-
-      /* margin-right: 30px; */
+      width: 25%;
+      float: left;
+      margin-right: 30px;
 }
-/* .img .about-code{
-  margin-top:200px;
-} */
-
 
 .about-heading{
   /* display: inline-flex; */
@@ -95,11 +87,11 @@ h3 {
   /* margin-right: 170px; */
 }
 
-/* .about-para{ 
+.about-para{ 
   font-family: 'Merriweather', serif;
   text-align: left;
   
-} */
+}
 
 
 /* END ABOUT ME */
@@ -113,7 +105,7 @@ h3 {
   align-items: center;
   width: 100%;
   height: 250px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   background-color: rgb(64, 185, 233);
   background-image: linear-gradient(62deg, #cef8ff 0%, #ffe9ff 100%);
 }
@@ -140,8 +132,8 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 740px;
-  margin-bottom: 100px;
+  height: 600px;
+  margin-bottom: 50px;
   background-color: rgb(64, 185, 233);
   background-image: linear-gradient(62deg, #cef8ff 0%, #ffe9ff 100%);
 }
@@ -327,8 +319,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100px;
-  margin-top: 40px;
+  height: 80px;
   margin-bottom: 2px;
   background-color: rgb(64, 185, 233);
   background-image: linear-gradient(62deg, #cef8ff 0%, #ffe9ff 100%);
@@ -425,10 +416,6 @@ body {
 }
 
 
-/* .img .me{
-  width: 10px;
-  height: 0px;
 
-} */
 /* END RESPONSE CARD */
 

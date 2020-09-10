@@ -69,9 +69,9 @@ h3 {
 
 .about-me {
     width: 50%;
-    margin: 100px auto 100px auto;
-    text-align: left;
-    
+    margin: 100px 50px; 100px 50px;
+    /* text-align: center; */
+    padding: 20px;
     }
   
 .about-code {
@@ -82,9 +82,9 @@ h3 {
 
 .about-heading{
   /* display: inline-flex; */
-  text-align: left;
+  /* text-align: left; */
   /* margin-top: 200px; */
-  margin-right: 170px;
+  /* margin-right: 170px; */
 }
 
 .about-para{ 
@@ -122,7 +122,7 @@ h3 {
     object-fit: cover;
 }
 
-.container{
+.container-projects{
   padding: 3% 15%;
 }
 
@@ -325,4 +325,97 @@ body {
   background-image: linear-gradient(62deg, #cef8ff 0%, #ffe9ff 100%);
 }
 
+
+/* RESPONSE CARD */
+
+
+.wrapper-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+
+}
+
+.card-design{
+  width: 250px;
+  height: 250px;
+  padding: 2rem 1.5rem;
+  border-radius: 5px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.profile-pic{
+  height: 220px;
+  width: 200px;
+  border-radius: 10px;
+  /* position: absolute; */
+  top: -16%;
+  left: -50%;
+  background-color: none;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+  /* opacity: 0; */
+}
+
+.profile-pic img{
+  width: 100%;
+  height: 100%;
+}
+
+.details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  transition: all 0.5s;
+}
+
+.details h2{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: purple;
+  background-color: white;
+  font-weight: 300px;
+  margin-bottom: 10px;
+}
+
+.details h5{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: black;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.details ul{
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+}
+
+.card-design:hover {
+  background: #fff;
+}
+
+.card-design:hover .profile-pic{
+   left: 0%;
+   opacity： 1；
+}
+
+.card-design:hover .details{
+  left: 60%;
+  position: absolute;
+  transition: all o. 5s;
+
+}
+
+
+
+/* END RESPONSE CARD */
 

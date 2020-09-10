@@ -41,7 +41,7 @@
   
   
       <div class="container">
-        <h1 style="font-size: 180px; padding-bottom: 60px;">Refresh Me</h1>
+        <h1 style="font-size: 150px; padding-bottom: 60px;">Refresh Me</h1>
   
         <div class="dice">
           <p style="text-align:center">Player 1</p>
@@ -55,22 +55,40 @@
         </div>
   
       </div>
-      <script>
-        function changeImageOne(random){
-          var string = `./images/dice${random}.png`;
-          document.getElementById('imageOne').src = string;
-        };
-        function changeImageTwo(random){
-          var string = `./images/dice${random}.png`;
-          document.getElementById('imageTwo').src = string;
-        }
-        changeImageOne((Math.floor(Math.random() * 6) + 1).toString());
-        changeImageTwo((Math.floor(Math.random() * 6) + 1).toString());
-      </script>
-      
+
   
 
+          <script>
 
+            function changeImageOne(random){
+              var string = `./images/dice${random}.png`;
+              document.getElementById('imageOne').src = string;
+            };
+            function changeImageTwo(random){
+              var string = `./images/dice${random}.png`;
+              document.getElementById('imageTwo').src = string;
+            }
+            changeImageOne((Math.floor(Math.random() * 6) + 1).toString());
+            changeImageTwo((Math.floor(Math.random() * 6) + 1).toString());
+        
+        
+        
+        document.addEventListener('DOMContentLoaded', function(){
+        document.querySelector('form').onsubmit = function() {
+        const name = document.querySelector('#name').value;
+        alert(`Congratulations, ${name} !`);
+        };
+        });
+        
+          </script>
+
+          <h2>Who won?</h2>
+          <br>
+              <form>
+                <input autofocus id ="name" placeholder="Name" type="text">
+                <input type="submit">
+              </form>
+    
 <!-- END OF GAME -->
 <!-- START FOOTER SECTION -->
 
@@ -81,7 +99,10 @@
   </footer>
   
   <!-- END FOOTER SECTION -->
+
+
   </body>
   
   </html>
   
+
